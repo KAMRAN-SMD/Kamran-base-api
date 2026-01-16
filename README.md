@@ -234,5 +234,4 @@ Project ini dilengkapi GUI bawaan:
 </details>
 <div align="center">
 Created with ❤️ by Danzz
-Danzz | KuroNeko
 </div>
