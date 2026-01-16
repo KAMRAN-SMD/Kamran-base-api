@@ -1,3 +1,15 @@
+/* fix */
+html {
+    overflow-x: hidden;
+    width: 100%;
+    /* Mencegah layout lompat saat scrollbar muncul */
+    scrollbar-gutter: stable; 
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* docs html */
 body.docs-page {
     touch-action: manipulation;
@@ -207,12 +219,15 @@ body.donasi-page {
     color: #000;
 }
 
+/* Note: Body styles modified for layout stability */
 body {
     background-image: radial-gradient(#333 1px, transparent 1px);
     background-size: 20px 20px;
     background-color: #e0e0e0;
     scrollbar-width: thin;
     scrollbar-color: #ffb000 #0c0c0c;
+    margin: 0; /* Reset */
+    padding: 0; /* Reset */
 }
 
 .scanline {
