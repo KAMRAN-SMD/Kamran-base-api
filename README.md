@@ -11,7 +11,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-[**Demo Website**](https://kuronekoapy.vercel.app) • [**Demo**](https://nekoapy.zone.id) • [**Rest Api**](https://github.com/DanzzAraAra/kuroneko-base-api/issues)
+[**Demo Website**](https://kuronekoapy.vercel.app) • [**Rest Api**](https://nekoapy.zone.id) • [**Bug report**](https://github.com/DanzzAraAra/kuroneko-base-api/issues)
 
 </div>
 
@@ -187,7 +187,9 @@ Option A: Vercel (Recommended)
  * Vercel akan otomatis mendeteksi vercel.json dan melakukan build.
 Option B: VPS / Panel (Manual)
 # 1. Build project di komputer lokal atau di server
+```bash
 npm run build
+```
 
 # 2. Pastikan folder 'dist/' sudah ada
 # 3. Jalankan command start
@@ -213,16 +215,22 @@ Project ini dilengkapi GUI bawaan:
 🐛 Troubleshooting Common Issues
 <details>
 <summary><b>Error: "Cannot find module './src/qris'"</b></summary>
+
  * Penyebab: Kamu mencoba menjalankan file JS tapi belum melakukan build.
  * Solusi: Jalankan npm run build terlebih dahulu. Cek apakah file dist/src/qris.js sudah terbentuk.
+
 </details>
 <details>
 <summary><b>Error TypeScript Compilation</b></summary>
+
  * Solusi: Cek error log. Jika terlalu ketat, kamu bisa mematikan strict mode di tsconfig.json dengan mengubah "strict": true menjadi false.
+
 </details>
 <details>
 <summary><b>QRIS Image tidak muncul</b></summary>
+
  * Solusi: Buka src/qris.ts dan pastikan variabel STATIC_QRIS sudah diisi dengan string URL/Base64 QRIS yang valid.
+
 </details>
 <div align="center">
 Created with ❤️ by Danzz
