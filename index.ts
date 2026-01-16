@@ -5,8 +5,8 @@ import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
-import { generateQrisDynamic, isStaticQrisConfigured } from './src/qris';
-import { loadRouter, initAutoLoad } from './src/autoload';
+import { generateQrisDynamic, isStaticQrisConfigured } from './src/qris.ts';
+import { loadRouter, initAutoLoad } from './src/autoload.ts';
 
 const app: Application = express();
 const PORT = process.env.PORT || 3000;
